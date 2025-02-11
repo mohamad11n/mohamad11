@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة الهبوط</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto min-h-screen flex flex-col items-center justify-center text-center p-4">
+        <h1 class="text-4xl font-bold text-gray-800 mb-4">مرحبًا بك في موقعنا</h1>
+        <p class="text-lg text-gray-600 mb-6">سجل الآن للحصول على آخر التحديثات والعروض المميزة</p>
+        
+        <div class="bg-white shadow-lg rounded-lg p-6 w-full max-w-md">
+            <form id="signup-form" class="space-y-4">
+                <input type="text" id="name" placeholder="الاسم الكامل" class="w-full p-3 border border-gray-300 rounded-md">
+                <input type="email" id="email" placeholder="البريد الإلكتروني" class="w-full p-3 border border-gray-300 rounded-md">
+                <button type="submit" class="w-full bg-blue-500 text-white py-3 rounded-md hover:bg-blue-600">سجل الآن</button>
+            </form>
+        </div>
+        
+        <img src="https://source.unsplash.com/600x300/?technology,business" alt="صورة توضيحية" class="mt-6 rounded-lg shadow-lg">
+    </div>
+
+    <script>
+        document.getElementById("signup-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("تم التسجيل بنجاح!");
+        });
+    </script>
+</body>
+</html>
